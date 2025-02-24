@@ -1983,3 +1983,23 @@ body {
     opacity: 1;
   }
 }
+.floating-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF69B4; /* Adjust the color as needed */
+  text-align: center;
+  position: absolute;
+  top: 50%; /* Adjust to position vertically */
+  left: 50%; /* Adjust to position horizontally */
+  transform: translate(-50%, -50%);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-20px);
+  }
+}
